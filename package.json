@@ -1,0 +1,26 @@
+{
+    "name": "assignment-5",
+    "version": "1.0.0",
+    "description": "This is my last assigment",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch server.js"
+    },
+    "author": "Rogger G. Díaz - 20209618",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.26.1",
+        "body-parser": "^1.19.2",
+        "compress": "^0.99.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "express-handlebars": "^6.0.3",
+        "fs": "0.0.1-security",
+        "helmet": "^5.0.2",
+        "https": "^1.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
