@@ -78,8 +78,7 @@
                             <li><a href="#line1">Getting Started</a></li>
                             <li><a href="#line2">How it works</a></li>
                             <li><a href="#line3">Doing POST requests</a></li>
-                            <li><a href="#line3">Doing GET requests</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
+                            <li><a href="#line4">Doing GET requests</a></li>
                             <li><a href="#line5">Creating Blog Pages</a></li>
                             <li><a href="#line6">Revolution Slider</a></li>
                             <li><a href="#line7">How to Use Option Panel</a>
@@ -256,17 +255,56 @@
                         <!-- end row -->
 
 
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                            a more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English.</p>
+                        <p>To show how to execute POST requests, we used the following snipping of PowerShell snipping of code: </p>
+                        <p><code>$postData = @{nombre='TestFromPowerShell';apellido='TestFromPowershell';telefono='TestFromPowershell'}</code><br>
+                            then <br>
+                           <code>Invoke-WebRequest -Method POST -Uri http://localhost:4001/api/contact -Body $postData -UseBasicParsing</code></p>
 
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#"
-                            class="btn btn-info">Ask a Question</a>
+                    <p>To be able to execute those snipping of code successfully, you have to be running the project locally on the port 4001. 
+                        The object <code>$postData</code> stores an example of the JSON data that was summited through the <code>/api/contact/</code> direction. 
+                        <code> Invoke-WebRequest</code> sends HTTP and HTTPS requests to a web page or web service. It parses the response and returns collections of links, images, and other significant HTML
+                          elements.<br> 
+                          The <code>Invoke-WebRequest</code> method is prepared with -Body defines the body JSON object. </p>
+                      
 
                         <hr>
 
-                        <h4>Upload via FTP Server</h4>
+                        <h4>DEMO</h4>
+                      <p>Click  </strong> <a href="https://github.com/RolEYder/Express-Backend-Contact-Assignment-5"
+                                                        target="_blank">here</a> to see a demo usage.</p>
+    
+                        <hr>
+                      
+
+                    </section>
+                       <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Doing GET requests
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <p>To show how to execute POST requests, we used the following snipping of PowerShell snipping of code: </p>
+                        <p><code>$postData = @{nombre='TestFromPowerShell';apellido='TestFromPowershell';telefono='TestFromPowershell'}</code><br>
+                            then <br>
+                           <code>Invoke-WebRequest -Method POST -Uri http://localhost:4001/api/contact -Body $postData -UseBasicParsing</code></p>
+
+                    <p>To be able to execute those snipping of code successfully, you have to be running the project locally on the port 4001. 
+                        The object <code>$postData</code> stores an example of the JSON data that was summited through the <code>/api/contact/</code> direction. 
+                        <code> Invoke-WebRequest</code> sends HTTP and HTTPS requests to a web page or web service. It parses the response and returns collections of links, images, and other significant HTML
+                          elements.<br> 
+                          The <code>Invoke-WebRequest</code> method is prepared with -Body defines the body JSON object. </p>
+                      
+
+                        <hr>
+
+                        <h4>DEMO</h4>
 
                         <p>Lorem the It is a long established fact that a reader will be distracted by the readable
                             content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
