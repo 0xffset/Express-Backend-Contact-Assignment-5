@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon --watch server.js",
-        "build": "netlify-lambda build express"
+        "build": "netlify-lambda build srcn"
     },
     "author": "Rogger G. Díaz - 20209618",
     "license": "MIT",
