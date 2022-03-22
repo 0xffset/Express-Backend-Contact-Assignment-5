@@ -177,27 +177,27 @@
                                 <ul>
                                     <li>
                                         Clone the repo
-                                        <pre>
+                                        
             <code>
-                git clone 
+                git clone https://github.com/RolEYder/Express-Backend-Contact-Assignment-5.git
             </code>
-        </pre>
+        
                                     </li>
                                     <li>
                                         Install NPM dependencies
-                                        <pre>
+                        
             <code>
                 npm install
             </code>
-        </pre>
+        
                                     </li>
                                     <li>
                                         Run it
-                                        <pre>
+                                 
             <code>
                npm run dev
             </code>
-        </pre>
+      
                                     </li>
                                 </ul>
                                 
@@ -222,10 +222,20 @@
                         <!-- end row -->
 
 
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                            a more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English.</p>
+                        <p> This app works using express and Node.js. Express is a minimal and flexible Node.js web 
+                            application framework that provides a robust set of features for web and mobile applications. 
+                            Each API call is handled by express thought <code>express.Router()</code> define as:
+                        </p><br>
+                        <p>
+                            <code>
+                                router.route('/api/contact/')<br>
+                                    &nbsp;.get(contactController.list)<br>
+                                    &nbsp;.post(contactController.create)
+                            </code>
+                        </p>
+                        where <code>contactController.list</code> is the method called when a GET request is incoming and <code>contactController.create</code> is 
+                        the method called when a POST request is incoming. 
+
 
                        
                        
@@ -237,7 +247,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Theme
+                                <h2 class="dark-text">Doing POST requests
                                     <hr>
                                 </h2>
                             </div>
@@ -245,7 +255,6 @@
                         </div>
                         <!-- end row -->
 
-                        <h4>Upload via WordPress Admin</h4>
 
                         <p>Lorem the It is a long established fact that a reader will be distracted by the readable
                             content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
