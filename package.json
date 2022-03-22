@@ -5,7 +5,8 @@
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon --watch server.js"
+        "dev": "nodemon --watch server.js",
+        "build": "netlify-lambda build express"
     },
     "author": "Rogger G. Díaz - 20209618",
     "license": "MIT",
@@ -18,7 +19,8 @@
         "express-handlebars": "^6.0.3",
         "fs": "0.0.1-security",
         "helmet": "^5.0.2",
-        "https": "^1.0.0"
+        "https": "^1.0.0",
+        "netlify-lambda": "^2.0.15"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"
