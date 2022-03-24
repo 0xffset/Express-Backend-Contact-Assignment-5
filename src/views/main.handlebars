@@ -79,7 +79,7 @@
                             <li><a href="#line2">How it works</a></li>
                             <li><a href="#line3">Doing POST requests</a></li>
                             <li><a href="#line4">Doing GET requests</a></li>
-                            
+
                         </ul>
                     </nav>
                 </div>
@@ -160,34 +160,34 @@
                                 <ul>
                                     <li>
                                         Clone the repo
-                                        
-            <code>
+
+                                        <code>
                 git clone https://github.com/RolEYder/Express-Backend-Contact-Assignment-5.git
             </code>
-        
+
                                     </li>
                                     <li>
                                         Install NPM dependencies
-                        
-            <code>
+
+                                        <code>
                 npm install
             </code>
-        
+
                                     </li>
                                     <li>
                                         Run it
-                                 
-            <code>
+
+                                        <code>
                npm run dev
             </code>
-      
+
                                     </li>
                                 </ul>
-                                
 
-                              
-                        </div>
-                        <!-- end row -->
+
+
+                            </div>
+                            <!-- end row -->
 
                     </section>
                     <!-- end section -->
@@ -205,8 +205,9 @@
                         <!-- end row -->
 
 
-                        <p> This app works using express and Node.js. Express is a minimal and flexible Node.js web 
-                            application framework that provides a robust set of features for web and mobile applications. 
+                        <p> This app works using express and Node.js. Express is a minimal and flexible Node.js web
+                            application framework that provides a robust set of features for web and mobile
+                            applications.
                             Each API call is handled by express thought <code>express.Router()</code> define as:
                         </p><br>
                         <p>
@@ -216,12 +217,13 @@
                                     &nbsp;.post(contactController.create)
                             </code>
                         </p>
-                        where <code>contactController.list</code> is the method called when a GET request is incoming and <code>contactController.create</code> is 
-                        the method called when a POST request is incoming. 
+                        where <code>contactController.list</code> is the method called when a GET request is incoming
+                        and <code>contactController.create</code> is
+                        the method called when a POST request is incoming.
 
 
-                       
-                       
+
+
 
                     </section>
                     <!-- end section -->
@@ -239,29 +241,36 @@
                         <!-- end row -->
 
 
-                        <p>To show how to execute POST requests, we used the following snipping of PowerShell snipping of code: </p>
+                        <p>To show how to execute POST requests, we used the following snipping of PowerShell snipping
+                            of code: </p>
                         <p><code>$postData = @{nombre='TestFromPowerShell';apellido='TestFromPowershell';telefono='TestFromPowershell'}</code><br>
                             then <br>
-                           <code>Invoke-WebRequest -Method POST -Uri http://localhost:4001/api/contact -Body $postData -UseBasicParsing</code></p>
+                            <code>Invoke-WebRequest -Method POST -Uri http://localhost:4001/api/contact -Body $postData -UseBasicParsing</code>
+                        </p>
 
-                    <p>To be able to execute those snipping of code successfully, you have to be running the project locally on the port 4001. 
-                        The object <code>$postData</code> stores an example of the JSON data that was summited through the <code>/api/contact/</code> direction. 
-                        <code> Invoke-WebRequest</code> sends HTTP and HTTPS requests to a web page or web service. It parses the response and returns collections of links, images, and other significant HTML
-                          elements.<br> 
-                          The <code>Invoke-WebRequest</code> method is prepared with -Body defines the body JSON object. </p>
-                      
+                        <p>To be able to execute those snipping of code successfully, you have to be running the project
+                            locally on the port 4001.
+                            The object <code>$postData</code> stores an example of the JSON data that was summited
+                            through the <code>/api/contact/</code> direction.
+                            <code> Invoke-WebRequest</code> sends HTTP and HTTPS requests to a web page or web service.
+                            It parses the response and returns collections of links, images, and other significant HTML
+                            elements.<br>
+                            The <code>Invoke-WebRequest</code> method is prepared with -Body defines the body JSON
+                            object.
+                        </p>
+
 
                         <hr>
 
                         <h4>DEMO</h4>
-                      <p>Click  </strong> <a href="https://github.com/RolEYder/Express-Backend-Contact-Assignment-5"
-                                                        target="_blank">here</a> to see a demo usage.</p>
-    
+                        <p>Click </strong> <a href="https://github.com/RolEYder/Express-Backend-Contact-Assignment-5"
+                                target="_blank">here</a> to see a demo usage.</p>
+
                         <hr>
-                      
+
 
                     </section>
-                       <section id="line4" class="section">
+                    <section id="line4" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -274,30 +283,33 @@
                         <!-- end row -->
 
 
-                        <p>To show how to execute GET requests, we used the following snipping of PowerShell snipping of code: </p>
+                        <p>To show how to execute GET requests, we used the following snipping of PowerShell snipping of
+                            code: </p>
                         <p><code>$response = Invoke-WebRequest -Method GET -Uri http://localhost:4001/api/contact -UseBasicParsing</code><br>
                             then <br>
-                           <code>ConvertFrom-Json $([String]::new($response.Content))</code></p>
+                            <code>ConvertFrom-Json $([String]::new($response.Content))</code>
+                        </p>
 
-                    <p>The object<code>$response</code> stores the responses from the GET call, the <code>ConvertFrom-Json $([String]::new($response.Content))</code> 
-                        convert the API response to text. </p>
-                      
+                        <p>The object<code>$response</code> stores the responses from the GET call, the
+                            <code>ConvertFrom-Json $([String]::new($response.Content))</code>
+                            convert the API response to text. </p>
+
 
                         <hr>
 
                         <h4>DEMO</h4>
-  <p>Click  </strong> <a href="https://github.com/RolEYder/Express-Backend-Contact-Assignment-5"
-                                                        target="_blank">here</a> to see a demo usage.</p>
-                 
+                        <p>Click </strong> <a href="https://github.com/RolEYder/Express-Backend-Contact-Assignment-5"
+                                target="_blank">here</a> to see a demo usage.</p>
 
-                     
+
+
                         <hr>
-                        
+
 
                     </section>
                     <!-- end section -->
 
-               
+
                 </div>
                 <!-- // end .col -->
 

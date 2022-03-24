@@ -2,11 +2,11 @@
     "name": "assignment-5",
     "version": "1.0.0",
     "description": "This is my last assigment",
-    "main": "server.js",
+    "main": "src/server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon --watch server.js",
-        "build": "netlify-lambda build srcn"
+        "build": "./node_modules/.bin/netlify-lambda build src"
     },
     "author": "Rogger G. Díaz - 20209618",
     "license": "MIT",
@@ -20,7 +20,8 @@
         "fs": "0.0.1-security",
         "helmet": "^5.0.2",
         "https": "^1.0.0",
-        "netlify-lambda": "^2.0.15"
+        "netlify-lambda": "^2.0.15",
+        "request": "^2.79.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"
