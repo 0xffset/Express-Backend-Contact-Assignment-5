@@ -5,8 +5,7 @@
     "main": "src/server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon --watch server.js",
-        "build": "./node_modules/.bin/netlify-lambda build src"
+        "dev": "nodemon --watch server.js"
     },
     "author": "Rogger G. Díaz - 20209618",
     "license": "MIT",
